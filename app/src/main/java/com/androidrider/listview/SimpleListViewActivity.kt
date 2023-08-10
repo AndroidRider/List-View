@@ -4,13 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.Toast
-import com.androidrider.listview.databinding.ActivityMainBinding
+import com.androidrider.listview.databinding.ActivitySimpleListViewBinding
 
-class MainActivity : AppCompatActivity() {
+class SimpleListViewActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivitySimpleListViewBinding
 
     lateinit var adapter: ArrayAdapter<*>
 
@@ -18,13 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySimpleListViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        binding.btnListView.setOnClickListener {
-            startActivity(Intent(this, ListViewActivity::class.java))
-        }
 
         //simple lisView
         val listView = binding.listView
