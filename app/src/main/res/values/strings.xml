@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ListView</string>
 
+
+    <string name="c">C is a general-purpose programming language that is extremely popular, simple, and flexible to use.</string>
+    <string name="cp">ListView</string>
+
+
 </resources>
