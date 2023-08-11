@@ -1,8 +1,5 @@
 package com.androidrider.listview
 
-import android.content.Context
-import kotlin.coroutines.coroutineContext
-
 object Constant {
 
     var items = ArrayList<ListViewModel>()
